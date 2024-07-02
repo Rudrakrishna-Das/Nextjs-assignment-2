@@ -74,7 +74,7 @@ const User = () => {
       <div>
         {userData.map((user) => (
           <div
-            className={`border-[1px] border-black p-6 `}
+            className={`border-[1px] border-black p-4 `}
             key={user.profile.username}
           >
             <div
@@ -93,7 +93,6 @@ const User = () => {
                   : ""
               }`}
             >
-              {/* https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png */}
               <div className="flex gap-5">
                 <div>
                   <Image
@@ -105,7 +104,7 @@ const User = () => {
                     alt={user.profile.username}
                     height={100}
                     width={100}
-                    className="rounded-full object-cover max-sm:w-20 max-sm:h-20"
+                    className="rounded-full object-cover max-sm:w-10 max-sm:h-10"
                     onError={() =>
                       setImageError({
                         ...imageError,
